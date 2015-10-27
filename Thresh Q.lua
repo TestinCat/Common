@@ -1,6 +1,3 @@
-PrintChat("Thresh Q.")
-PrintChat("by TestinCat") 
-
 ThreshMenu = Menu("Thresh", "Thresh")
 ThreshMenu:SubMenu("Combo", "Combo")
 ThreshMenu.Combo:Boolean("Q", "Use Q", true)
@@ -27,3 +24,6 @@ OnLoop(function(myHero)
   if ThreshMenu.Drawings.Q:Value() then DrawCircle(GoS:myHeroPos().x, GoS:myHeroPos().y, GoS:myHeroPos().z,1100,3,100,0xffffff00) end
 
 end)
+
+PrintChat("Thresh Q.")
+PrintChat("by TestinCat") 
